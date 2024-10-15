@@ -1,0 +1,428 @@
+/* Estilo para a página de cadastro */
+.formulario-cadastro {
+    max-width: 540px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.formulario-cadastro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.campo input:focus {
+    border-color: #ff8c00;
+    outline: none;
+}
+
+.btn-cadastro {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastro:hover {
+    background-color: #e07b00;
+}
+/* Configuração básica */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #ff8c00;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e07b00;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: fit-content;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 70%;
+}
+
+header h1 {
+    color: #ff8c00;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 0.9em;
+    padding: 5px 15px;
+    background-color: #ff8c00;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e07b00;
+}
+
+/* Seção do Banner Principal */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/sr myagi e daniel.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Deixa o banner mais escuro */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-hero {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #e07b00;
+}
+
+/* Seção de Destaques */
+.destaques {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.destaques h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    justify-items: center;
+}
+
+.produto {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* O produto ocupa a largura total do contêiner */
+    max-width: 280px; /* Limite opcional para produtos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para o card */
+}
+
+.produto img {
+    width: 100%; /* A imagem ocupa a largura total do contêiner do produto */
+    height: 200px; /* Defina uma altura fixa para as imagens */
+    object-fit: cover; /* Assegura que a imagem cubra o contêiner, cortando se necessário */
+    border-radius: 10px; /* Para manter as bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+}
+
+/* Para garantir que os cards tenham a mesma altura */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.produto p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Adicionar padding ao card para alinhar texto */
+.produto h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.produto .btn-comprar {
+    background-color: #ff8c00;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover */
+.produto .btn-comprar:hover {
+    background-color: #e07b00; /* Cor de fundo ao passar o mouse */
+    border-color: #e07b00; /* Cor da borda ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Efeito de foco */
+.produto .btn-comprar:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5); /* Adiciona uma sombra de foco */
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff8c00;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .btn-hero {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+/* Estilo para a página de catálogo */
+.catalogo {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.catalogo h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff8c00;
+}
+
+/* Grid de Produtos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.produto {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 280px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.produto p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.produto .preco {
+    font-size: 1.4em;
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de Compra */
+.produto .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.produto .btn-comprar:hover {
+    background-color: #e07b00;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    .catalogo h2 {
+        font-size: 2em;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogo h2 {
+        font-size: 1.8em;
+    }
+
+    .produto {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .produto h3 {
+        font-size: 1.2em;
+    }
+}

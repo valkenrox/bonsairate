@@ -1,0 +1,10 @@
+{
+  "name": "html-jss-tenta",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./styles/styles.css -o ./styles/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.0"
+  }
+}
